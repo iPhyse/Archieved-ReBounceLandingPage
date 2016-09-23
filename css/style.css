@@ -1,0 +1,87 @@
+html, body{
+    height: 100%;
+}
+body {
+    background: url(../img/bg.png) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.logo {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.qr {
+    background: url(../img/qrcode.png) no-repeat;
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.game_play {
+    width: 100%;
+}
+
+.fist {
+    position: fixed;
+    z-index: 10;
+    width: 150px;
+}
+
+.ball {
+    position:absolute; 
+    top: 0; 
+    z-index: 10;
+}
+
+.volleyball, .football, .basketball, .soccerball, .bowlingball {
+    width: 80px;
+}
+.tennisball{
+    width: 45px;
+}
+
+footer {
+    z-index: 100;
+    margin-top: 150px; 
+    position: absolute;
+    padding: 10px;
+    bottom: 0; 
+    right: 0;
+    width: 100%;
+    background-color: black;
+}
+
+footer img {
+    padding:  0 5px;
+    height: 100px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 840px) {
+    footer img {
+        height: 75px;
+    }
+    .fist {
+        width: 125px;
+    }
+}
+@media screen and (max-width: 580px) {
+    footer img {
+        height: 50px;
+    }
+    .fist {
+        width: 100px;
+    }
+}
